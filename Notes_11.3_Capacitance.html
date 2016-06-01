@@ -1,14 +1,25 @@
 <html>
 <head><style>
+div{display: none;}
+[onclick|=show]{color: red;}
 </style>
-  <script></script>
+  <script>
+  function show(id){
+    if (document.getElementById(id).style.display === "none"){
+      document.getElementById(id).style.display = "block"
+    }
+    else {
+      document.getElementById(id).style.display = "none"
+    }
+  }
+  </script>
 </head>
 
 <body>
-<h1>11.3 Capacitance</h1>
-
-<h2>11.3.1  Capacitance</h2>
-<p>Current can flow through wires when there is a complete ciruit</p>
+<h1 >11.3 Capacitance</h2>
+<h3 onclick=show('a')>11.3.1  Capacitance</h3>
+<div id="a">
+  <p>Current can flow through wires when there is a complete ciruit</p>
 <p>If you apply an emf to an open circuit what happens?</p>
 
 <p>Some current will flow until the electric field due to the charge separation is equal to the applied E field</p>
@@ -17,23 +28,44 @@
   <p>C = Q / V</p>
 
 <p>With a high Capacitance we can store a more Charge for the same voltage</p>
-
-
-<h2>11.3.2  Dielectric Materials</h2>
+<p>The units of capacitance are Coulombs per Volt CV<sup>-1</sup> or Farads (F)</p>
+</div>
+<h3>11.3.2  Dielectric Materials</h3>
+<div id="11.3.2">
 <p>Parallel plates allow us to store charge, the capacitance will depend on...</p>
    <ul><li>plate seapatation</li><li>plate area</li><li>permativity</li></ul>
+
+<p>We know V=E.d so if the separation of the plates in increased and V is constant E must decrease.</p>
+<p>Field lines start and end on +ve and -ve charges so E &prop; Q :. Q = k/d
+
+<p>The charge will depend _______ on area</p>
+<p>The constant of proporitionality is &epsilon; the permeattivity of the material between the plates.</p>
+<p>The units of permattivity are Fm<sup>-1</sup></p>
 
 <p>C=&epsilon;A/d</p>
 
 <p>The permeativity is (sort of) how easy it is to separate charge in a medium.
-   A dielectric material has seperable +ve and -ve charges.
-   Note: The permativity of free space is not zero!</p>
+   A dielectric material has a diapole of +ve and -ve charges.
+   Note: The permeativity of free space &epsilon;<sub>o</sub> is not zero!</p>
+<p>The ratio of permeativity of a material to the permeativity of free space is &epsilon;<sub>r</sub></p>
+
+<p>&epsilon; = &epsilon;<sub>o</sub>&times;&epsilon;<sub>r</sub></p>
+</div>
+<h3>11.3.3  Capacitors in series and parallel</h3>
+<div id="11.3.3">
+  <p>If you put two Capacitors in parallel, what happens to the voltage? What else changes?
+<p>The voltage stays the same, the effective Area of the plates will increase.</p>
+<p>As C=Q/V and  Q<sub>T</sub>/V<sub>T</sub> = Q<sub>1</sub>/V<sub>1</sub> + Q<sub>2</sub>/V<sub>2</sub>
+<p>The Capacitance of two capacitors in parallel is C<sub>T</sub> = C<sub>1</sub> + C<sub>2</sub>
 
 
-<h2>11.3.3  Capacitors in series and parallel</h2>
+</div>
+<h3>11.3.4  Resistor-capacitor (RC) series circuits</h3>
+<div id="11.3.4">
 
-<h2>11.3.4  Resistor-capacitor (RC) series circuits</h2>
+</div>
+<h3>11.3.5  Time constant</h3>
+<div id="11.3.5">
 
-<h2>11.3.5  Time constant</h2>
-
+</div>
 </body>
