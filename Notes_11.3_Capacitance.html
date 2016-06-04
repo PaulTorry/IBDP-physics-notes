@@ -81,18 +81,32 @@ div{display: none;}
 
 <h3 onclick="show('11.3.5')">11.3.5  Time constant</h3>
 <div id="11.3.5">
-<p></p>
-</div>
+<p>As the current depends on the &Delta;V, and &Delta;V depends on the charge (which obviously depends on current) we have a feedback loop.</p>
+<p>I=dQ/dt, V=V<sub>o</sub>-Q/C </p>
+<p>So dQ/dt = 1/R(V-Q/C)</p>
+<p> Drop the V and rearange: 1/Q dQ =-R.C.dt</p>
+<p>Q=Q<sub>o</sub>e^(-t/RC)</p>
+<p>This is exponential decay!</p>
+<p>The constant RC dictates the rate of decay and is called the time constant &tau;, &tau;=RC</p>
+<p>Q=Q<sub>o</sub>e^(-t/&tau;)</p>
+<p>Since V=Q/C and I=V/R we get the next 2 equations</P>
+<p>V=V<sub>o</sub>e^(-t/&tau;)</p>
+<p>I=I<sub>o</sub>e^(-t/&tau;)</p>
+ </div>
 
 
 <h3 onclick="show('11.3.6')">11.3.6  Energy in a Capacitor</h3>
-<div id="11.3.5">
-
+<div id="11.3.6">
+<p>Since a voltage is causing a current work is being done</p>
+<p>The Energy transfered in an electrical component is QV (But V depends on Q)</p>
+<p>The area under a V/Q graph is...</p>
+<p>E=&half;VQ and Q=VC so....</p>
+<p>E=&half;CV&sup2;</p>
 </div>
 
 
-<h3 onclick="show('11.3.6')">11.3.7  Capacitors in diode bridge circuits</h3>
-<div id="11.3.5">
+<h3 onclick="show('11.3.7')">11.3.7  Capacitors in diode bridge circuits</h3>
+<div id="11.3.6">
 
 </div>
 
