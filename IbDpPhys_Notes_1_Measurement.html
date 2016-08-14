@@ -1,0 +1,268 @@
+<html>
+<head> <meta charset="UTF-8"> <style>
+div{display: block;}
+[onclick|=show]{color: red;}
+</style>
+  <script>
+  function show(id){
+    if (document.getElementById(id).style.display === "none"){
+      document.getElementById(id).style.display = "block"
+    }
+    else {
+      document.getElementById(id).style.display = "none"
+    }
+  }
+  </script>
+</head>
+
+
+<body>
+  <h1>Topic 1 Measurement in Physics</h2>
+
+  <h3 onclick="show('1.0')">1.0 Tools for the scientist</h3>
+  <div id="1.0">
+
+    <p>In order to describe a situation we need:</p>
+    <table class="2col">
+      <tr><td>A consistent language:</td>     <td>Names and symbols for different quantities.</td></tr>
+      <tr><td>A way of quantifying:</td>      <td>Numbers (maths) and units.</td></tr>
+    </table>
+
+    <p>To make our lives easier we also:</p>
+    <table class="2col">
+      <tr><td>Reduce number of zeros:</td>          <td>Standard form and unit prefixes</td></tr>
+      <tr><td>Use few digits in calculations:</td>  <td>Rounding, significant figures and decimal places</td></tr>
+      <tr><td>Make simple estimates:</td>           <td>Order of magnitude</td></tr>
+    </table>
+
+    <p>The physical world is messy, we can calculate and express our Uncertanties</p>
+    <table class="2col">
+      <tr><td>Erros in measurement:</td>          <td>Absolute, fractional and percentage uncertainties</td></tr>
+      <tr><td>Errors on graphs:</td>              <td>Error bars</td></tr>
+      <tr><td>Erros in our final result:</td>      <td>Uncertainty of gradient and intercepts</td></tr>
+    </table>
+
+    <p>As well as a size some quantities have a direction</p>
+    <table class="2col">
+      <tr><td>Expressing quantities >  1D</td>          <td>Vectors</td></tr>
+      <tr><td>Calculation in > 1D</td>              <td>Combination and Resolving into components</td></tr>
+    </table>
+
+  </div>
+
+  <h3 onclick="show('1.1')">1.1 Measurement in Physics</h3>
+  <div id="1.1">
+
+    <p>The terms: <i>massive</i>, <i>weight</i>, <i>moment</i>, <i>battery</i>
+    and many others have specific meanings in physics.</p>
+    <table>
+    <tr><td>  Massive: </td><td>	An object/particle that has mass (some don't)</td></tr>
+    <tr><td>  Weight: 	</td><td>The <u>force</u> due to gravity (not measured in Kg)</td></tr>
+    <tr><td>  Moment:</td><td>	The turning effect of a force</td></tr>
+    <tr><td>  Battery:</td><td>	A group of ___ (e.g. electic cells) in series or parallel (like battery hens,
+    artillery battery)</td></tr>
+    </table>
+
+    <p>Using terminology correctly allows clear communication of ideas.</p>
+
+
+  <h4 onclick="show('1.1.1')">1.1.1  Quantities, Symbols and Units</h4>
+  <div id="1.1.1">
+
+   <p>There appear to be properties of the universe that we can measure and calculate.</p>
+   <p>Things such as distance, time, mass can be measured and relationships calculated.</p>
+
+   <p>We need a... <p>
+     <ul><li>Name to call the quantity. (and symbol for use in calculations)</li>
+       <li>Common unit of measurement (and symbol for brevity)</li></ul>
+
+   <p>The most basic (or easiest to measure) are the fundamental (base) quantities</p>
+   <p>Others that can be given in terms of the fundamental quantities are called derived quantities</p>
+
+   <p>e.g. Distance and Time are fundamental quantities with units meters and seconds</p>
+   <p>Speed is a derived quantity with unit meters per second</p>
+
+   <p>All terms in an expression must have the same units</p>
+   <p>Height = initial height + growth per year * number of years</p>
+
+  </div>
+
+  <h4 onclick="show('1.1.2')">1.1.2  <u><b>SI System of units</b></u> - <i>Le Système International d'Unités (related to the Metric system)</i></p></h4>
+  <div id="1.1.2">
+    <p><b>Fundamental quantities and units:</b></p>
+
+    <table width="406" cellpadding="7" cellspacing="0" style="border-top: 1.50pt solid #000000; border-bottom: 1px solid #000000; border-left: 1.50pt solid #000000; border-right: none;">
+    	<col width="105">    	<col width="65">    	<col width="111">    	<col width="65">
+      <tr><td colspan="2" align="center"> Quantity  </td><td colspan="2" align="center">  Unit </td></tr>
+      <tr><td>  Name </td><td>  Symbol	</td><td> Name 	</td><td>  Symbol </td></tr>
+      <tr><td> Mass  </td><td>  M	</td><td>  Kilogram	</td><td> Kg  </td></tr>
+      <tr><td> Distance  </td><td>  d (s,h..)	</td><td> Metre 	</td><td> m  </td></tr>
+      <tr><td> Time  </td><td>  t	</td><td> Second 	</td><td> s  </td></tr>
+      <tr><td> Current  </td><td> I 	</td><td> Ampere 	</td><td>  A </td></tr>
+      <tr><td>Temperature</td><td>  T	</td><td> Kelvin 	</td><td> K  </td></tr>
+      <tr><td>  Amount of substance </td><td> n 	</td><td>  Mole	</td><td> mol  </td></tr>
+    </table>
+    <p>Note: Quantities are sometimes called <i>properties </i><i>attributes </i>or <i>dimensions</i></p>
+
+    <table width="697" cellpadding="7" cellspacing="0">
+    	<col width="125">    	<col width="79">    	<col width="132">    	<col width="79">    	<col width="91">    	<col width="103">
+    	<tr>
+    		<td colspan="2" align="center"><b>Derived Quantity</b></td>
+    		<td colspan="2" align="center"><b>Derived Unit</b></td>
+    		<td rowspan="2" align="center">Alternative units</td>
+    		<td rowspan="2" align="center"><b>Fundamental units</b></td>
+    	</tr><tr>
+    		<td align="center">Name</td>    		<td align="center">Symbol</td>    		<td align="center">Name</td>    		<td align="center">Symbol</td>
+
+    	<tr>	<td><b>Area</b></td> <td>A</td> <td></td>  <td></td>  <td></td> <td>m<sup>2</sup></td></tr>
+      <tr>  <td><b>Volume</b></td> <td>V</td> <td></td>  <td></td>  <td></td> <td>m<sup>3</sup></td></tr>
+      <tr>  <td><b>Velocity/speed</b></td> <td>V(s,u)</td>  <td></td>  <td></td> <td></td> <td>m.s<sup>-1</sup></td></tr>
+      <tr>  <td><b>Acceleration</b></td>  <td>a</td>  <td></td>  <td></td> <td></td> <td>m.s<sup>-2</sup></td></tr>
+      <tr>  <td><b>(due to gravity)</b></td>  <td>g</td>  <td></td>  <td></td> <td></td> <td>m.s<sup>-2</sup></td></tr>
+      <tr>  <td><b>Force</b></td>  <td>F</td>  <td>Newton</td>  <td>N</td> <td>N.Kg<sup>-1</sup></td> <td>Kg.m.s<sup>-2</sup></td></tr>
+      <tr>  <td><b>Momentum</b></td>  <td>p(m)</td>  <td></td>  <td></td> <td>N.S</td> <td>Kg.m.s<sup>-1</sup></td></tr>
+      <tr>  <td><b>Energy</b></td>  <td>E (W,Q)</td>  <td>Joule</td>  <td>J</td> <td></td> <td>Kg.m<sup>2</sup>.s<sup>-2</sup></td></tr>
+      <tr>  <td><b>Power</b></td>  <td>P</td>  <td>Watts</td>  <td>W</td> <td>Js<sup>-1</sup></td> <td><sup></sup></td></tr>
+      <tr>  <td><b>Electrical p.d</b></td> <td>V (p.d)</td>  <td>Volts</td>  <td>V</td> <td>J.C<sup>-1</sup></td> <td>Kg.m<sup>2</sup>.s<sup>-2</sup>.A<sup>-1</sup></td></tr>
+      <tr>  <td><b>Electrical charge</b></td>  <td>Q</td>  <td>Coulomb</td>  <td>C</td> <td></td> <td><sup></sup></td></tr>
+    </table>
+
+  </div>
+
+  <h4 onclick="show('1.1.3')">1.1.3  Standard form</h4>
+  <div id="1.1.3">
+
+    <p>The length of the universe is about 1000000000000000000000000 meters and the radius of an atom is about 0.000000000000001 meters.
+      When measuring length, scientists will usually use the metre (m).
+      To describe very small or very large objects standard form is often used so that quantities can be easily compared.</p>
+  </div>
+
+  <h4 onclick="show('1.1.4')">1.1.4  Unit prefixes</h4>
+  <div id="1.1.4">
+
+    <p>To avoid always using standard form we can use unit prefixes to show large and small numbers.<p>
+      <table>
+        <tr><td>nano</td><td>micro</td><td>milli</td><td>|</td><td>kilo</td><td> mega</td><td>giga</td></tr>
+        <tr><td>n</td><td>μ</td><td>m</td><td>|</td><td>k</td><td>M</td><td>G</td></tr>
+        <tr><td>10<sup>-9</sup></td><td>10<sup>-6</sup></td><td>10<sup>-3</sup></td><td>|</td><td>10<sup>3</sup></td><td>10<sup>6</sup></td><td>10<sup>9</sup></td></tr>
+      </table>
+  </div>
+
+
+  <h4 onclick="show('1.1.5')">1.1.5  Order of magnitude</h4>
+  <div id="1.1.5">
+
+    <h5>Range of magnitudes we can observe</h5>
+
+    <h5>Range of magnitudes we can observe</h5>
+    <table>
+    <tr><td rowspan=2>Distance:</td><td>Sub atomic Particle</td><td>Visible universe</td></tr>
+    <tr><td>10<sup>-15</sup></td><td>10<sup>25</sup></td></tr>
+    <tr><td rowspan=2>Mass:</td><td>Electron</td><td>Universe</td></tr>
+    <tr><td>10<sup>-30</sup></td><td>10<sup>-50</sup></td></tr>
+    <tr><td rowspan=2>Time:</td><td>Light to cross atomic nucleus</td><td>Age of the Universe</td></tr>
+    <tr><td>10<sup>-23</sup></td><td>10<sup>18</sup></td></tr>
+    </table>
+  </div>
+
+  <h4 onclick="show('1.1.6')">1.1.6  Estimation</h4>
+  <div id="1.1.6">
+
+    <p>An estimate (good guess) can allow an approximate answer to be calculated, this can be useful when testing a theory or result.</p>
+    <p>You may be asked to estimate to 2 sig fig, 1 sig fig or the nearest order of magnitude.</p>
+
+  </div>
+</div>
+
+    <h3 onclick="show('1.2')">1.2  Uncertanties and errors</h3>
+    <div id="1.2">
+
+      <p>Accuracy of numbers</p>
+
+    <p>Significant Figures</p>
+
+
+    <p>I could measure a bit of string and find that its length is 23.2cm...</p>
+    <p>What does 23.2 mean? How about 23.20?</p>
+    <p>It doesn’t just mean <i>exactly</i> 23.2, it actually expresses a <i>range</i> of possible values.   23.15 ≤ 23.2 &lt; 23.25</p>
+    <p>Likewise 23.20 doesn’t mean <i>exactly</i> 23.2, it expresses the <i>range</i> 23.195 ≤ 23.20 &lt; 23.205</p>
+
+    <p><i>Draw the two ranges on this number line: </i><u>								.</u></p>
+    <p>Remember to use ° and 			<u>23.1			23.2			23.3</u></p>
+
+    <p>The number of decimal places and/or significant figures can be used to express accuracy.</p>
+
+    <p>But some situations are ambiguous:</p>
+
+    <p>
+    In ambiguous cases you should state the sig.fig after the value. [100m <sub>(2 s.f.)</sub>] or use ±</p>
+
+    <p>When doing calculations you should never give your answer to higher accuracy (sig-fig) than the question:</p>
+
+    <p>e.g. An object moves 15m in 63.5s. What is its speed?</p>
+    <p>	s=d/t	s=15/63.5	s= 0.2362204724	Lowest sf in Q is 2sf		s=0.24ms<sup>-1</sup></p>
+    <p>Decimal Places</p>
+    <p>When recording data from an instrument in general the same number of d.p should be used.</p>
+    <p>This is because<u> most instruments are accurate to an absolute value.</u></p>
+    <p>e.g ruler (accurate to 0.5mm)</p>
+
+    <p> <u>Rounding </u></p>
+    <p>Even if we could be entirely accurate with all measurements, using many digits in calculations makes them more difficult.</p>
+
+    <p>We can round to a number of <i>significant figures, decimal places</i> or to an <u>order of magnitude</u>.</p>
+    <p><u>Order of magnitude </u>- Round to the nearest ‘10’.</p>
+
+
+
+
+
+
+</div>
+
+<u>Uncertainty and Error</u></p>
+<p><u>Error</u></p>
+
+<p>Random errors:           Errors due to instrument, experimenter or environment which are not constant.</p>
+<p >( e.g. temperature, wind, misreading, uncontrollable variables)</p>
+
+<p >Systematic errors:       Errors due to instrument, experimenter whichcause a consistent error.</p>
+<p >		(e.g. miscalibration, parallax )</p>
+<p>Precision and accuracy </p>
+<p>Accuracy:			How close the results are to the ‘real’ result.</p>
+<p>Precision:			How close together the results are.</p>
+<p>Random errors spread out results – 		low precision</p>
+<p>Systematic errors move the average result - 	low accuracy</p>
+<p>Random errors can be compensated for by _________.</p>
+<p>Systematic errors can be detected in the graphical analysis.</p>
+<p>Inaccuracy in measurement</p>
+<p>Reading the scale results in the most common inaccuracy.</p>
+<p>The usual value is ± ½ of the smallest gradation.</p>
+<p>Additional inaccuracies can be due to the method of measurement or additional factors.</p>
+<p>USE JUDGEMENT to estimate the value of such errors and CHECK by finding the variation (standard error) from the mean.</p>
+<p>Likely errors in length measurements:</p>
+<p>Absolute:</p>
+<p>Percentage:</p>
+<u>Stating accuracy:</u>		Absolute, fractional, percentage ERRORS</p>
+<p>Absolute:	inaccuracy in the reading 	=	50 ± 1V	0.400 ± 0.005m		12 ± 2W</p>
+<p>Fractional: 	inaccuracy / value		=	1 / 50  (relative error)</p>
+<p>Decimal:					=	0.02 </p>
+<p>Percentage:	(inaccuracy / value) × 100	=	2%</p>
+<p><u>Results:</u></p>
+<p>
+When adding /subtracting values add the absolute uncertainties.</p>
+
+20 ± 1m + 28 ± 1m = 			2.4 ± 0.05 + 1.6 ± 0.05 =
+
+When multiplying / dividing values add the percentage uncertainties.</p>
+  20 ± 1m   /   2.3 ± 0.05s =
+   15 ± 0.5m   /   20 ± 0.5s =
+12 ± 2V   /   0.4 ± 0.1A =
+<<u>Showing Uncertainties in graphs </u>
+
+<p>Error bars are used for each point - can be different for x and y axis.</p>
+<p>(usually only the axis with the greatest error has error bars shown)</p>
+
+<p>To find the error in the gradient you should:</p>
+<p>Apply the error bars to the line of best fit at the x (or y) coordinates of the first and last valid data 	point</p>
+<p>Draw the steepest and shallowest lines which will pass through the error bars.</p>
+<p>Uncertainty = ± largest deviation</p>
